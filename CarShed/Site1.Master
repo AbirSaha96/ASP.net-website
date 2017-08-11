@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CarShed.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="h1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body
+{
+    background: #FFFFFF;
+    font-size: .80em;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+    height: 780px;
+    width: 100%;
+}
+@media screen and (max-width:999px)
+{
+}
+        .style1
+        {
+            font-size: xx-large;
+            font-family: "Rockwell Extra Bold";
+            color: #3399FF;
+        }
+        .style2
+        {
+            color: #3399FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" >
+    <header>
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="65px" Width="64px" 
+            ImageAlign="AbsMiddle" ImageUrl="~/logo.jpg" ToolTip="Logo" />
+        &nbsp;<span class="style2"><strong> </strong></span><span class="style1">
+        <strong style="font-size: xx-large">CarShed.com</strong></span>
+        </div>
+        
+        <div>        
+            <asp:menu id="NavigationMenu"
+        staticdisplaylevels="2"
+        staticsubmenuindent="10" 
+        orientation="Horizontal"
+        dynamichorizontaloffset="10"
+        target="_blank"  
+        runat="server">
+
+        <items>
+          <asp:menuitem navigateurl="Home.aspx" 
+            text="Home"
+            tooltip="Home">
+            <asp:menuitem navigateurl="MyAccount.aspx"
+              text="My Account"
+              tooltip="My Account"/>
+              <asp:menuitem navigateurl="MyWishlist.aspx" 
+                text="My Wishlist"
+                tooltip="My Wishlist"/>
+              <asp:menuitem navigateurl="MyOrders.aspx"
+                text="My Orders"
+                tooltip="My Orders" />
+                
+                </asp:menuitem>
+               
+
+        </items>
+
+      </asp:menu>
+      </div>
+      </header>
+      
+    <br />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer>
+        <p style="height: 73px; width: 779px" >
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:HyperLink ID="help" runat="server">Help</asp:HyperLink>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:HyperLink ID="contactus" runat="server">Contact Us</asp:HyperLink>
+    </p>
+    </footer>
+    </form>
+</body>
+</html>
