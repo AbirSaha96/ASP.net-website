@@ -83,7 +83,7 @@
     <asp:Button ID="accreate" runat="server" BackColor="#9966FF" 
         BorderColor="#CC3300" Font-Bold="True" Font-Italic="True" 
         Font-Names="Monotype Corsiva" Font-Size="Large" Font-Underline="False" 
-         Text="Sign Up" />
+         Text="Sign Up" onclick="accreate_Click" />
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="status" runat="server" EnableViewState="False" 

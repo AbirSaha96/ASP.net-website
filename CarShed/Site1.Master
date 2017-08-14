@@ -22,29 +22,101 @@
 @media screen and (max-width:999px)
 {
 }
+#ContentPlaceHolder1
+{
+    width: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: white;
+            height: auto;
+}
+#footer
+{
+ 
+    width: auto;
+    margin: auto;
+    padding-bottom: 2px;
+    background-color: white;
+            height: auto;
+            text-align:right;
+}
+    
+         
+#wrapper
+{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: white;
+            height: 2px;
+        }
+    
+}
+
+#navigation
+{
+    height: 46px;
+            margin-top: 0px;
+        }
+
+#nav
+{
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+#nav a:link , #nav a :visited, #nav a:active 
+{
+    display: block;
+    color: #574c3f;
+    text-decoration: none;
+            font-weight: 700;
+            font-style: italic;
+            font-family: "Footlight MT Light";
+        }
+
+#nav a:hover {
+    background-color: white;
+}
+
+#content
+{
+    padding: 20px;
+    min-height: 400px;
+}
+
+         body
+        {
+           
+            
+             background-color:#F0FFF0;
+            
+        }
         .style1
         {
-            font-size: xx-large;
-            font-family: "Rockwell Extra Bold";
-            color: #3399FF;
+            font-size: large;
         }
-        .style2
-        {
-            color: #3399FF;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server" >
     <header>
     <div>
-        <asp:Image ID="Image1" runat="server" Height="65px" Width="64px" 
-            ImageAlign="AbsMiddle" ImageUrl="~/logo.jpg" ToolTip="Logo" />
-        &nbsp;<span class="style2"><strong> </strong></span><span class="style1">
-        <strong style="font-size: xx-large">CarShed.com</strong></span>
+       
+        <asp:ImageMap ID="ImageMap1" runat="server" Height="183px" 
+            HotSpotMode="Navigate" ImageUrl="~/1.jpg" Width="827px">
+            <asp:RectangleHotSpot NavigateUrl="~/Home.aspx" />
+        </asp:ImageMap>
+       
         </div>
         
-        <div>        
+         <div id="wrapper">
+          
+            <div id="navigation">
+                <ul id="nav">        
             <asp:menu id="NavigationMenu"
         staticdisplaylevels="2"
         staticsubmenuindent="10" 
@@ -63,6 +135,14 @@
               <asp:menuitem navigateurl="MyWishlist.aspx" 
                 text="My Wishlist"
                 tooltip="My Wishlist"/>
+                <asp:MenuItem Text="Catagory"
+                tooltip="Catagories">
+                <asp:MenuItem  Text="Brands" />
+                <asp:MenuItem Text="Muscle Car" />
+                <asp:MenuItem Text="Sports Car" />
+                <asp:MenuItem Text="luxary Car" />
+                <asp:MenuItem Text="Concept Cars" />
+                </asp:MenuItem>
               <asp:menuitem navigateurl="MyOrders.aspx"
                 text="My Orders"
                 tooltip="My Orders" />
@@ -73,6 +153,8 @@
         </items>
 
       </asp:menu>
+      </ul>
+      </div>
       </div>
       </header>
       
