@@ -13,5 +13,12 @@ namespace CarShed
         {
 
         }
+
+        protected void NavigationMenu_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
+
+       
     }
 }
