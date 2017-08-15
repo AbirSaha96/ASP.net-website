@@ -14,6 +14,7 @@ namespace CarShed
     public partial class Home : System.Web.UI.Page
     {
         //Connection obj = new Connection();
+        String s;
         protected void Page_Load(object sender, EventArgs e)
         {
           //String s = obj.Data_inventer("select picone , cname from cardetails").ToString();
@@ -26,9 +27,10 @@ namespace CarShed
 
         }
 
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void info_click(object sender, EventArgs e)
         {
-
+            //s = labelcid.Text;
+            //Response.Redirect("details.aspx?cid=" + Server.UrlEncode(s));
         }
 
         

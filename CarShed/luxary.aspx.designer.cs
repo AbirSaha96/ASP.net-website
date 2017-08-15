@@ -10,7 +10,7 @@
 namespace CarShed {
     
     
-    public partial class Home {
+    public partial class luxary {
         
         /// <summary>
         /// DataList1 control.

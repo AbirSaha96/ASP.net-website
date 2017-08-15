@@ -7,6 +7,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script type="text/javascript">
+        function checkPassword(str) {
+            var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+            return re.test(str);
+        }
+        </script>
     <style type="text/css">
        #pass
         {
@@ -16,20 +22,28 @@
         {
             width: 299px;
         }
+        .style1
+        {
+            color: #FFFFFF;
+        }
+        .style2
+        {
+            color: #FFCC99;
+        }
     </style>
 </head>
 <body >
     <form id="form1" method="post" title="Signup">
     <p style="font-family: 'Bodoni MT'; font-size: x-large; font-weight: bolder; font-style: oblique; font-variant: inherit; color: #33CC33; text-decoration: underline blink">
         Sign Up Here!!</p>
-&nbsp;&nbsp; First&nbsp; Name :&nbsp;
+    <span class="style1">&nbsp;&nbsp; First&nbsp; Name </span>:&nbsp;
     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
         ControlToValidate="fname" Display="Dynamic" ErrorMessage="*Reqd." 
         ForeColor="#CC3300" SetFocusOnError="True"></asp:RequiredFieldValidator>
     <asp:TextBox ID="fname" runat="server" Width="143px" ></asp:TextBox>
-&nbsp;&nbsp; Middle Name :&nbsp;&nbsp;
+&nbsp;<span class="style1">&nbsp; Middle Name :&nbsp;</span>&nbsp;
     <asp:TextBox ID="mname" runat="server" Width="168px"></asp:TextBox>
-&nbsp; Last Name :&nbsp;&nbsp;<asp:RequiredFieldValidator 
+&nbsp; <span class="style1">Last Name :</span>&nbsp;&nbsp;<asp:RequiredFieldValidator 
         ID="RequiredFieldValidator2" runat="server" ControlToValidate="lname" 
         Display="Dynamic" ErrorMessage="*Reqd." ForeColor="#CC3300" 
         SetFocusOnError="True"></asp:RequiredFieldValidator>
@@ -41,7 +55,7 @@
         <asp:ListItem>Female</asp:ListItem>
         <asp:ListItem>Others</asp:ListItem>
     </asp:RadioButtonList>
-    E-Mail Id&nbsp; :&nbsp;&nbsp;
+    <span class="style1">E-Mail Id&nbsp; :&nbsp;&nbsp;</span>
     <asp:TextBox ID="email" runat="server" Width="398px"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
         ControlToValidate="email" Display="Dynamic" ErrorMessage="*Reqd." 
@@ -52,15 +66,20 @@
         ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
     <br />
     <br />
-&nbsp;Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox 
+    <span class="style1">&nbsp;Password :&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox 
         ID="pass" runat="server" CausesValidation="True" TextMode="Password" MaxLength="20" Width="333px"></asp:TextBox>
-    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp; &nbsp;&nbsp;<asp:CustomValidator ID="CustomValidator1" runat="server" 
+        ClientValidationFunction=" checkPassword" ControlToValidate="pass" 
+        ErrorMessage="min. 6 words containing one caps, one no. , underscore , " 
+        ForeColor="Red"></asp:CustomValidator>
+    &nbsp;&nbsp;&nbsp;
     <br />
-&nbsp;Confirm Password&nbsp; :&nbsp;<asp:TextBox ID="conpass" runat="server" TextMode="Password"
+    <span class="style2">&nbsp;Confirm Password&nbsp; :</span>&nbsp;<asp:TextBox ID="conpass" runat="server" TextMode="Password"
         Width="336px"></asp:TextBox>
     &nbsp; &nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" 
         ControlToCompare="pass" ControlToValidate="conpass" Display="Dynamic" 
-        ErrorMessage="Doesnot match with password" SetFocusOnError="True"></asp:CompareValidator>
+        ErrorMessage="Doesnot match with password" SetFocusOnError="True" 
+        ForeColor="Red"></asp:CompareValidator>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />

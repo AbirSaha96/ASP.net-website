@@ -61,6 +61,8 @@
     <Content Include="App_Data\Data_log.LDF">
       <DependentUpon>Data.mdf</DependentUpon>
     </Content>
+    <Content Include="brands.aspx" />
+    <Content Include="buy-now.gif" />
     <Content Include="Car\Dodge\Avenger RT\1.jpg" />
     <Content Include="Car\Dodge\Avenger RT\2.jpg" />
     <Content Include="Car\Dodge\Avenger RT\3.jpg" />
@@ -141,16 +143,26 @@
     <Content Include="Car\Plymouth\Plaza Barracuda\2.jpg" />
     <Content Include="Car\Plymouth\Plaza Barracuda\3.jpg" />
     <Content Include="Car\Plymouth\Plaza Barracuda\4.jpeg" />
+    <Content Include="concept.aspx" />
+    <Content Include="details.aspx" />
+    <Content Include="ferrari logo.jpg" />
     <Content Include="Home.aspx" />
     <Content Include="info.jpg" />
+    <Content Include="logo lam.png" />
+    <Content Include="logo-dodge.jpg" />
     <Content Include="logo.jpg" />
+    <Content Include="luxary.aspx" />
+    <Content Include="mitsubishi logo.jpg" />
+    <Content Include="muscle.aspx" />
     <Content Include="MyAccount.aspx" />
     <Content Include="MyOrders.aspx" />
     <Content Include="MyWishlist.aspx" />
+    <Content Include="plymouth.jpg" />
     <Content Include="qqwe.jpg" />
     <Content Include="Sagar.jpg" />
     <Content Include="SignIn.aspx" />
     <Content Include="Signup.aspx" />
+    <Content Include="sports.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -201,7 +213,28 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="brands.aspx.cs">
+      <DependentUpon>brands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brands.aspx.designer.cs">
+      <DependentUpon>brands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="concept.aspx.cs">
+      <DependentUpon>concept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="concept.aspx.designer.cs">
+      <DependentUpon>concept.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,6 +244,20 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="luxary.aspx.cs">
+      <DependentUpon>luxary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="luxary.aspx.designer.cs">
+      <DependentUpon>luxary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muscle.aspx.cs">
+      <DependentUpon>muscle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muscle.aspx.designer.cs">
+      <DependentUpon>muscle.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyAccount.aspx.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
@@ -254,6 +301,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sports.aspx.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sports.aspx.designer.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
