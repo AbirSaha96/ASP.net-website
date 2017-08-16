@@ -57,7 +57,7 @@
                                         BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" 
                                         Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" 
                                         style="margin-bottom: 0px" Text="Log In" ValidationGroup="Login1" 
-                                        Height="34px" Width="105px"/>
+                                        Height="34px" Width="105px" onclick="LoginButton_Click"/>
                                     
                                 </td>
                             </tr>

@@ -34,7 +34,7 @@ namespace CarShed
                 {
                     Session.Add("abcd", Login1.UserName);
                     Session.Add("efgh", Login1.Password);
-                    Server.Transfer("Home.aspx");
+                    Response.Redirect("Home.aspx",false);
                 }
                 else
                 {
@@ -44,6 +44,11 @@ namespace CarShed
 
             dr.Close();
             T_Con.Close();
+        }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+
         }
 
         }

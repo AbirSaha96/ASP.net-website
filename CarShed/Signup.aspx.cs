@@ -35,12 +35,26 @@ namespace CarShed
                 dd.Items.Add("--DD-");
                 for (int i = 1; i < 32; i++)
                 {
-                    dd.Items.Add(Convert.ToString(i));
+                    if (i < 10)
+                    {
+                        dd.Items.Add("0" + Convert.ToString(i));
+                    }
+                    else
+                    {
+                        dd.Items.Add(Convert.ToString(i));
+                    }
                 }
                 mm.Items.Add("--MM-");
                 for (int j = 1; j < 13; j++)
                 {
-                    mm.Items.Add(Convert.ToString(j));
+                    if (j < 10)
+                    {
+                        mm.Items.Add("0" + Convert.ToString(j));
+                    }
+                    else
+                    {
+                        mm.Items.Add(Convert.ToString(j));
+                    }
                 }
 
                 yy.Items.Add("--YYYY-");

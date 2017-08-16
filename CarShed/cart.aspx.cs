@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CarShed
 {
-    public partial class MyOrders : System.Web.UI.Page
+    public partial class cart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

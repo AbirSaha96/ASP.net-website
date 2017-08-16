@@ -10,16 +10,7 @@
 namespace CarShed {
     
     
-    public partial class details {
-        
-        /// <summary>
-        /// T1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox T1;
+    public partial class cart {
         
         /// <summary>
         /// DataList1 control.

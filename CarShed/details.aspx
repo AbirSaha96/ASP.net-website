@@ -2,7 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<table><tr style="font-family: 'Comic Sans MS'">
+<asp:Textbox ID="T1" runat="server" Visible="false"></asp:Textbox>
+    <table><tr style="font-family: 'Comic Sans MS'">
     <asp:DataList ID="DataList1" runat="server" DataKeyField="cid" 
     BorderWidth="1px" CellPadding="3" GridLines="Vertical"
         DataSourceID="SqlDataSource1" Width="1143px"  
@@ -59,9 +60,10 @@
             body Type :
             <asp:Label ID="bodyLabel" runat="server" Text='<%# Eval("body") %>' Font-Size=Medium ForeColor="BurlyWood" />
             <br />
+            
             </td></tr>
             <tr><td>
-            <asp:Image ID="buy" runat="server" ImageUrl="~/buy-now.gif"  Height="100px" Width="120px"/>
+              <asp:ImageButton ID="buy" runat="server" ImageUrl="~/buy-now.gif"  Height="100px" Width="120px" OnClick="buy_Click"  />
 <br /> </td></tr></table></td></tr></table>
         </ItemTemplate>
     </asp:DataList>

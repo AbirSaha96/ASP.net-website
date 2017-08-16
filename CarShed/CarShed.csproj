@@ -63,6 +63,7 @@
     </Content>
     <Content Include="brands.aspx" />
     <Content Include="buy-now.gif" />
+    <Content Include="cart.aspx" />
     <Content Include="Car\Dodge\Avenger RT\1.jpg" />
     <Content Include="Car\Dodge\Avenger RT\2.jpg" />
     <Content Include="Car\Dodge\Avenger RT\3.jpg" />
@@ -155,8 +156,6 @@
     <Content Include="mitsubishi logo.jpg" />
     <Content Include="muscle.aspx" />
     <Content Include="MyAccount.aspx" />
-    <Content Include="MyOrders.aspx" />
-    <Content Include="MyWishlist.aspx" />
     <Content Include="plymouth.jpg" />
     <Content Include="qqwe.jpg" />
     <Content Include="Sagar.jpg" />
@@ -220,6 +219,13 @@
     <Compile Include="brands.aspx.designer.cs">
       <DependentUpon>brands.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="concept.aspx.cs">
       <DependentUpon>concept.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -265,20 +271,6 @@
     </Compile>
     <Compile Include="MyAccount.aspx.designer.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MyOrders.aspx.cs">
-      <DependentUpon>MyOrders.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MyOrders.aspx.designer.cs">
-      <DependentUpon>MyOrders.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MyWishlist.aspx.cs">
-      <DependentUpon>MyWishlist.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MyWishlist.aspx.designer.cs">
-      <DependentUpon>MyWishlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignIn.aspx.cs">
